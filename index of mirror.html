@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lovely Mirror</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="mirror-frame">
+        <div class="mirror-glow"></div>
+        <div class="mirror">
+          <div class="mirror-header">Mirror Mirror</div>
+
+          <video id="video" autoplay playsinline muted></video>
+          <canvas id="canvas"></canvas>
+
+          <div class="controls">
+            <label for="filterSelect">Filter</label>
+            <select id="filterSelect">
+              <option value="normal">Normal</option>
+              <option value="warm">Warm</option>
+              <option value="cool">Cool</option>
+              <option value="bw">Black & White</option>
+              <option value="pink">Pink Glow</option>
+            </select>
+          </div>
+
+          <div id="status" class="status">Click start to allow camera</div>
+          <div id="compliment" class="compliment"></div>
+
+          <p class="hint">A lovely compliment appears when you are in front of the camera</p>
+          <button id="startBtn">Start Camera</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
